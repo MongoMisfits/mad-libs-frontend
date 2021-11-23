@@ -16,6 +16,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className='banner'></div>
       <Header />
       {/* <Route path='/'exact element={<Header />} /> */}
 

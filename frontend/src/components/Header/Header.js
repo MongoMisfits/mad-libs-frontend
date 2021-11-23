@@ -4,6 +4,7 @@ import './Header.css'
 
 function Header() {
     return (
+        
         <div className='header'>
             <Link to='/'>
                 <h2>MADLIBS</h2>
