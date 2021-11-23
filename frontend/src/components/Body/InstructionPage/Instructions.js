@@ -1,12 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Instructions() {
-    return (
-        <div>
-            <h1>1. Select a theme</h1>
-            <h1>2. Fill in the word given the type</h1>
-            <h1>3. View your madlib</h1>
-            <h1>4. Submit your own stories</h1>
-        </div>
-    )
+  return (
+    <div>
+      <h2>Instruction Page</h2>
+      <ol>
+        <li>Select a theme</li>
+        <li>Fill in the word given the typ</li>
+        <li>View your madlib</li>
+        <li>Submit your own stories</li>
+      </ol>
+        <Link to='/game-page' ><button>Next</button></Link>
+    </div>
+  );
 }
