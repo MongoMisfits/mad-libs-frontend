@@ -1,11 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Header.css'
 
 function Header() {
     return (
-        <div>
+        <div className='header'>
             <Link to='/'>
-                <h1>MADLIBS</h1>
+                <h2>MADLIBS</h2>
+            </Link>
+            <Link to='/create-template'>
+                <h2>Create your own Template</h2>
             </Link>
         </div>
     )
