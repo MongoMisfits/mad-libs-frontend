@@ -1,4 +1,16 @@
-
 .App {
   text-align: center;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(/src/images/Banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 370px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 45px;
 }
