@@ -8,11 +8,14 @@ import ResultsBody from "./components/Body/ResultsBody";
 import Instructions from "./components/Body/InstructionPage/Instructions";
 import ThankYou from "./components/Body/ThankYouPage/ThankYou";
 import TemplateCreation from "./components/Body/TemplateCreation/TemplateCreation"
+import { useState } from "react";
 
 function App() {
+  const [gameBodyResults, setGameBodyResults] = useState([])
+
   const data = dummyData;
 
-  console.log('dummyData', dummyData);
+  console.log(gameBodyResults)
 
   return (
     <div className="App">
@@ -22,7 +25,7 @@ function App() {
 
       <Routes>
         <Route path="/" exact element={<Instructions />} />
-        <Route path="/game-page" exact element={<GameBody data={data} />} />
+        <Route path="/game-page" exact element={<GameBody data={data} setGameBodyResults={setGameBodyResults}/>} />
         <Route path="/result-page" exact element={<ResultsBody />} />
         <Route path="/thank-you-page" exact element={<ThankYou />} />
         <Route path="/create-template" exact element={<TemplateCreation />} />

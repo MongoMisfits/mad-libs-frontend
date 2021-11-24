@@ -6,7 +6,7 @@ function Body(props) {
     return (
         <div className='body-page'>
             <h1>Hello from Game Page</h1>
-            <Game data={props.data}/>
+            <Game data={props.data} setGameBodyResults={props.setGameBodyResults}/>
         </div>
     )
 }
