@@ -70,6 +70,8 @@ function Game(props) {
 
   const gameIndexIndicator = data[0] && <h1>{indexActive}/{data[templateRandomIndex].blanks.length}</h1>
 
+  console.log(data)
+
   return (
     <div>
       <h2>Game Page</h2>
