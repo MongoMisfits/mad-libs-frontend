@@ -11,6 +11,9 @@ function Header() {
             <Link to='/create-template'>
                 <h2>Create your own Template</h2>
             </Link>
+            <Link to='/thank-you-page'>
+                <h2>Thank You Page</h2>
+            </Link>
         </div>
     )
 }
