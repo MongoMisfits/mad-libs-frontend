@@ -14,3 +14,16 @@
     margin: 5px;
     padding: 45px;
 }
+
+.MongoMisfits {
+  display: flex;
+    justify-content: center;
+    background-image: url(/src/images/MongoMisfits.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    max-width: 100%;
+    margin: 5px;
+    padding: 75px;
+}
