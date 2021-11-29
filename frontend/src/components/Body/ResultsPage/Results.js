@@ -34,8 +34,6 @@ function Results(props) {
     setMatchingUsers(templateData)
   }
 
-  console.log(matchingUsers)
-
   useEffect(() => {
     fetchData();
   }, []);
