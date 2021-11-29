@@ -16,7 +16,6 @@ const TemplateCreation = (props) => {
       setUserInput({ ...userInput, [name]: value.split(',') });
     }
   };
-  console.log(userInput);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,12 +26,15 @@ const TemplateCreation = (props) => {
       },
       body: JSON.stringify(userInput),
     }).then(() => {
+      props.setAddTemplate(userInput)
+      props.addedTemplates.push(userInput)
       setUserInput({
         title: "",
         blanks: [],
         value: [],
       });
-    });
+    }).then(()=>{
+    })
   };
 
   return (
@@ -60,7 +62,7 @@ const TemplateCreation = (props) => {
           onChange={handleChange}
           placeholder="Value"
         />
-        <button type="submit" onClick={props.addTemplateOnCLick(userInput)}>Add Template</button>
+        <button type="submit">Add Template</button>
       </form>
     </div>
   );
