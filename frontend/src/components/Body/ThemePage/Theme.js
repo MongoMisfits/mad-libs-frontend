@@ -18,6 +18,7 @@ import XMen from "../../../themes/XMen.jpeg";
 
 function Theme(props) {
     const [data, setData] = useState([]);
+    console.log("data", data)
 
   const themeImages = [
     "",
