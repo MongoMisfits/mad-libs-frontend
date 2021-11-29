@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TemplateCreation = () => {
+const TemplateCreation = (props) => {
   const [userInput, setUserInput] = useState({
     title: "",
     blanks: [],
@@ -60,7 +60,7 @@ const TemplateCreation = () => {
           onChange={handleChange}
           placeholder="Value"
         />
-        <button type="submit">Add Template</button>
+        <button type="submit" onClick={props.addTemplateOnCLick(userInput)}>Add Template</button>
       </form>
     </div>
   );
