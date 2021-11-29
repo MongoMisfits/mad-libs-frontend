@@ -1,7 +1,13 @@
+import React from 'react';
+
+
 const ThankYou = ()=>{
     return(
         <div>
-            Welcome to Thank You Page
+            <div className="MongoMisfits"></div>
+            <br/>
+            <h3>Created by Ye Yint Aung, Brian Na, and Thomas Fairchild</h3>
+            <br/>
         </div>
     )
 }
