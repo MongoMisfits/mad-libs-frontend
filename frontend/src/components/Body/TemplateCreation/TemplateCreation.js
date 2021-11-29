@@ -27,16 +27,15 @@ const TemplateCreation = (props) => {
       body: JSON.stringify(userInput),
     }).then(() => {
       props.setAddTemplate(userInput)
-      props.addedTemplates.push(userInput)
       setUserInput({
         title: "",
         blanks: [],
         value: [],
       });
-    }).then(()=>{
-    })
+    });
+    
   };
-
+  
   return (
     <div>
       <h1>Welcome To Create Your Own Template Page</h1>

@@ -1,0 +1,14 @@
+.users-templates ul{
+    border: 1px solid black;
+    list-style: none;
+}
+
+.users-templates li{
+    font-weight: 700;
+    font-size: 18px;
+}
+.users-templates span{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
