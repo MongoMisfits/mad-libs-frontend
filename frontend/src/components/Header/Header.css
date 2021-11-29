@@ -1,8 +1,23 @@
 .header{
     display: flex;
     justify-content: center;
+    background-color: rgb(89, 94, 112);
+    border: 1px solid white;
+    backdrop-filter: blur 15px;
 }
 
 .header h2{
-    margin-right: 20px;
+    padding: 0 15px;
+    color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+    text-align: center;
+}
+  
+a:hover {
+    transform: scale(1.02);
 }

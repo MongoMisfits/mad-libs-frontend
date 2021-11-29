@@ -44,8 +44,6 @@ export default function App() {
     <div className="App">
       <div className="banner"></div>
       <Header />
-      {/* <Route path='/'exact element={<Header />} /> */}
-
       <Routes>
         <Route path="/" exact element={<Instructions />} />
         <Route

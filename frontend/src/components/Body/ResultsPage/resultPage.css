@@ -1,0 +1,10 @@
+.resultsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultsBody {
+    max-width: 1100px;
+}

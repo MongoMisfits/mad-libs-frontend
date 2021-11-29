@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { RiArrowRightCircleLine, RiArrowLeftCircleLine } from 'react-icons/ri'
+import './game.css'
 
 function Game(props) {
   const [data, setData] = useState([]);
@@ -33,7 +34,7 @@ function Game(props) {
 
   const handleInputSubmit = (e) => {
       e.preventDefault()
-    if (indexActive > 1 && indexActive < templateJsx.length) {
+    if (indexActive >= 1 && indexActive < templateJsx.length) {
         setIndexActive(indexActive + 1 )
     }
   }
@@ -43,7 +44,7 @@ function Game(props) {
   };
 
   const fetchData = () => {
-    fetch("http://localhost:5000/templates")
+    fetch("https://mongo-misfits.herokuapp.com/templates")
       .then((res) => res.json())
       .then((templates) => setData(templates));
   };
@@ -56,7 +57,7 @@ function Game(props) {
   const templateRandomIndex = data && Math.floor(initialTemplateIndex * data.length);
   const templateJsx = data[0] && data[templateRandomIndex].blanks.map((word, index) => {
       return (
-          <form onSubmit={handleInputSubmit} className={(indexActive === index + 1) ? 'activePage' : 'gameInput'}>
+          <form onSubmit={handleInputSubmit} className={`gameInput ${(indexActive === index + 1) ? 'activePage' : ''}`}>
               <input
                   key={`${word}${index}`}
                   index={index}
@@ -74,7 +75,6 @@ function Game(props) {
 
   return (
     <div>
-      <h2>Game Page</h2>
       <div className='gameBodyMain'>
         <div className='iconDiv'>
             <RiArrowLeftCircleLine className={indexActive > 1 ? 'arrowIcon' : 'arrowIcon arrowIconInvisible'} direction={'left'} onClick={handleArrowClick}/>

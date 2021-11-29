@@ -24,15 +24,10 @@ function Results(props) {
   };
 
   const fetchData = () => {
-    fetch("http://localhost:5000/users")
+    fetch("https://mongo-misfits.herokuapp.com/users")
       .then((res) => res.json())
       .then((users) => setOtherUserData(users));
   };
-
-  const checkTemplate = () => {
-    const templateData = otherUserData.filter(user => user.template[0].title === props.gameBodyResults.title)
-    setMatchingUsers(templateData)
-  }
 
   useEffect(() => {
     fetchData();
@@ -40,17 +35,10 @@ function Results(props) {
 
   useEffect(() => {
     concatFunction(props.gameBodyResults.blanks, props.gameBodyResults.value);
-    checkTemplate()
   }, [props.gameBodyResults]);
 
-  const matchingUserJsx = matchingUsers.map((user) => {
-      return(
-          <div>
-              <h1>Username: {user.user}</h1>
 
-          </div>  
-      )
-  })
+  console.log(matchingUsers)
 
   return (
     <div className="resultsMain">
@@ -58,7 +46,6 @@ function Results(props) {
       <div className="resultsBody">
         <h1>{fullSentence}</h1>
       </div>
-      <h1>View more from this category</h1>
     </div>
   );
 }
