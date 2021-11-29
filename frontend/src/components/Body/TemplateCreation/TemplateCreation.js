@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const TemplateCreation = () => {
+const TemplateCreation = (props) => {
   const [userInput, setUserInput] = useState({
     title: "",
     blanks: [],
@@ -16,7 +16,6 @@ const TemplateCreation = () => {
       setUserInput({ ...userInput, [name]: value.split(',') });
     }
   };
-  console.log(userInput);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -27,14 +26,16 @@ const TemplateCreation = () => {
       },
       body: JSON.stringify(userInput),
     }).then(() => {
+      props.setAddTemplate(userInput)
       setUserInput({
         title: "",
         blanks: [],
         value: [],
       });
     });
+    
   };
-
+  
   return (
     <div>
       <h1>Welcome To Create Your Own Template Page</h1>
