@@ -1,3 +1,5 @@
+/* Game Page */
+
 .body-page{
     color: rgb(101, 161, 141);
 }
@@ -52,4 +54,21 @@
 
 .gameIndexIndicator {
     width: 100%;
+}
+
+.underlinedWords {
+    text-decoration: underline;
+}
+
+/* Results */
+
+.resultsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultsBody {
+    max-width: 1100px;
 }

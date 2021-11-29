@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Instructions />} />
         <Route path="/game-page" exact element={<GameBody data={data} setGameBodyResults={setGameBodyResults}/>} />
-        <Route path="/result-page" exact element={<ResultsBody />} />
+        <Route path="/result-page" exact element={<ResultsBody gameBodyResults={gameBodyResults}/>} />
         <Route path="/thank-you-page" exact element={<ThankYou />} />
         <Route path="/create-template" exact element={<TemplateCreation />} />
       </Routes>
