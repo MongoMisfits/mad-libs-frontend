@@ -1,3 +1,74 @@
+/* Game Page */
+
 .body-page{
-    color: red;
+    color: rgb(101, 161, 141);
+}
+
+.gameBodyMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 2em;
+}
+
+.iconDiv {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowIcon {
+    font-size: 30px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.arrowIcon:hover {
+    transform: scale(1.1);
+}
+
+.arrowIconInvisible {
+    opacity: 0;
+    cursor: none;
+}
+
+.gameInput {
+    position: fixed;
+    opacity: 0;
+    right: -1500px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.activePage {
+    opacity: 1;
+}
+
+.gameInputMain {
+    width: 33%;
+    right: 0;
+    overflow: hidden;
+}
+
+.gameIndexIndicator {
+    width: 100%;
+}
+
+.underlinedWords {
+    text-decoration: underline;
+}
+
+/* Results */
+
+.resultsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultsBody {
+    max-width: 1100px;
 }
