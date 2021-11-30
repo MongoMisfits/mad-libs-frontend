@@ -21,7 +21,6 @@ function Theme(props) {
     console.log("data", data)
 
   const themeImages = [
-    "",
     BacktotheFuture,
     Batman,
     DragonBall,

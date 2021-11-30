@@ -3,8 +3,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
 .resultsBody {
-    max-width: 1100px;
+    text-align: left;
+    margin: 2em;
+    padding: 1em;
+    width: 40%;
+    font-size: 26px;
+    border: 1px solid gray;
+    border-radius: 15px;
+}
+
+.resultsBtnArr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.resultsBtnArr a {
+    padding: 0;
+    margin: 0;
 }

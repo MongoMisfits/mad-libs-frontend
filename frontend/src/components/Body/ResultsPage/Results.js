@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom'
+import './resultPage.css'
+
 
 function Results(props) {
   const [fullSentence, setFullSentence] = useState([]);
-  const [otherUserData, setOtherUserData] = useState([]);
-  const [matchingUsers, setMatchingUsers] = useState([])
+  const [usersData, setUsersData] = useState([])
+  const [usersDataSentence, setUsersDataSentence] = useState([])
 
   const concatFunction = (blanks, sentences) => {
     if (blanks) {
@@ -19,32 +22,56 @@ function Results(props) {
       if (blankArr.length < sentenceArr.length) {
         sentenceConcat.push(<span>{sentenceArr[sentenceArr.length - 1]}</span>);
       }
-      setFullSentence([...fullSentence, sentenceConcat]);
+      if (fullSentence.length >= 1) {
+        setUsersDataSentence([...usersDataSentence, sentenceConcat])
+      } else {
+        setFullSentence([...fullSentence, sentenceConcat]);
+      }
     }
   };
 
-  const fetchData = () => {
-    fetch("https://mongo-misfits.herokuapp.com/users")
-      .then((res) => res.json())
-      .then((users) => setOtherUserData(users));
-  };
+  // const saveData = () => {
+  //   fetch("https://mongo-misfits.herokuapp.com/users", {
+  //     method: 'POST',
+
+  //   })
+  //     .then((res) => res.json())
+  // };
+
+  const otherUserFetch = () => {
+    fetch('https://mongo-misfits.herokuapp.com/users')
+    .then(res => res.json())
+    .then(data => setUsersData(data))
+  }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    otherUserFetch()
+  }, [])
+
+  useEffect(() => {
+    if (usersData) {
+      for (let i=0; i < usersData.length; i++) {
+        concatFunction(usersData[i].template[0].blanks, usersData[i].template[0].value)
+      } 
+    }
+  }, [usersData])
+
+  console.log(usersData)
 
   useEffect(() => {
     concatFunction(props.gameBodyResults.blanks, props.gameBodyResults.value);
   }, [props.gameBodyResults]);
 
-
-  console.log(matchingUsers)
-
   return (
     <div className="resultsMain">
-      {props.gameBodyResults && <h1>{props.gameBodyResults.title}</h1>}
       <div className="resultsBody">
-        <h1>{fullSentence}</h1>
+        {props.gameBodyResults && <h1>{props.gameBodyResults.title}</h1>}
+        {fullSentence}
+      </div>
+      <div className='resultsBtnArr'>
+        <Link to='/game-page' > <button>Play Again</button></Link>
+        <Link to='/thank-you-page' > <button>Done</button></Link>
+        <button>Save Your Story</button>
       </div>
     </div>
   );

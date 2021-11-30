@@ -1,12 +1,20 @@
 
-input {
+.gameInputMain input {
     border: none;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
-    border-bottom: 1px solid rgb(218, 218, 218);
-    padding: 0 15px;
-    width: 50%;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    color: white;
+    width: 100%;
     outline: none;
+    background-color: rgb(104, 110, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInputMain input::placeholder {
+    color: white;
 }
 
 .body-page{
@@ -18,12 +26,12 @@ input {
     justify-content: center;
     align-items: center;
     height: 50vh;
-    gap: 2em;
+    gap: 1em;
     position: relative;
 }
 
 .iconDiv {
-    width: 33%;
+    width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,20 +63,25 @@ input {
     opacity: 0;
     transition: 1s ease;
     position: fixed;
-    height: 30vh;
+    height: 40vh;
     width: 30%;
+    aspect-ratio: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(165, 165, 165);
     border-radius: 20px;
     pointer-events: none;
-    filter: drop-shadow(1px 0px 1px #d1d1d1);
+    transform: translateY(200px);
+    z-index: -1;
 }
 
 .activePage {
     opacity: 1;
     pointer-events: visible;
+    transform: translateY(0);
+    z-index: 1;
+    background-color: rgb(104, 110, 129);
 }
 
 .gameInputMain {
@@ -79,8 +92,19 @@ input {
 
 .gameIndexIndicator {
     width: 100%;
+    font-size: 30px;
+}
+
+.gameIndexIndicator h1 {
+    padding: 0;
+    margin: 0 0 10px 0;
 }
 
 .underlinedWords {
     text-decoration: underline;
+}
+
+.gameSubmit {
+    font-size: 20px;
+    width: 50%;
 }

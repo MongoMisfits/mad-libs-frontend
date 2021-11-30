@@ -71,8 +71,6 @@ function Game(props) {
 
   const gameIndexIndicator = data[0] && <h1>{indexActive}/{data[templateRandomIndex].blanks.length}</h1>
 
-  console.log(data)
-
   return (
     <div>
       <div className='gameBodyMain'>
@@ -90,7 +88,7 @@ function Game(props) {
         {gameIndexIndicator}      
       </div>
       <Link to="/result-page">
-        <button onClick={handleClick}>Submit</button>
+        <button className='gameSubmit'onClick={handleClick}>Submit</button>
       </Link>
     </div>
   );
