@@ -9,7 +9,7 @@ import Instructions from "./components/Body/InstructionPage/Instructions";
 import ThankYou from "./components/Body/ThankYouPage/ThankYou";
 import TemplateCreation from "./components/Body/TemplateCreation/TemplateCreation";
 import UsersTemplates from "./components/Body/TemplateCreation/UsersTemplates";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [gameBodyResults, setGameBodyResults] = useState([]);
@@ -17,31 +17,29 @@ export default function App() {
   const data = dummyData;
   const [addTemplate, setAddTemplate] = useState();
   const [templates, setTemplates] = useState([]);
-  const [deleteTemplate, setDeleteTemplate] = useState()
+  
 
   if (!templates.includes(addTemplate)) {
     setTemplates([...templates, addTemplate]);
   }
 
-  const handleDelete = (event) => {
-    console.log("Delete Clicked");
-    setDeleteTemplate(
-      [...templates].filter((template) => {
-        return template === addTemplate;
-      })
-    )
-    event.preventDefault();
-    fetch("http://localhost:5000/templates", {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(deleteTemplate),
-    }).then(() => {
-      console.log(deleteTemplate)
-  })};
+  const handleDelete = (index) => {
+    console.log("Delete clicked");
+    fetch(`http://localhost:5000/templates/${index._id}`, { method: 'DELETE'})
+    .then(()=>{
+      fetch("http://localhost:5000/templates")
+        .then((res) => res.json())
+        .then((data)=>{
+          setAddTemplate(data)
+        })
+    })
+  };
 
-  console.log("Templates", templates);
+  const handleEdit = () => {
+    console.log("Edit Clicked");
+    
+  };
+
   return (
     <div className="App">
       <div className="banner"></div>
@@ -73,10 +71,9 @@ export default function App() {
           exact
           element={
             <UsersTemplates
-              templates={templates}
-              setTemplates={setTemplates}
               addTemplate={addTemplate}
               handleDelete={handleDelete}
+              handleEdit={handleEdit}
             />
           }
         />

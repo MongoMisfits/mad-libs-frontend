@@ -13,7 +13,7 @@ const TemplateCreation = (props) => {
     if (name === "title") {
       setUserInput({ ...userInput, [name]: value });
     } else {
-      setUserInput({ ...userInput, [name]: value.split(',') });
+      setUserInput({ ...userInput, [name]: value.split(",") });
     }
   };
 
@@ -26,16 +26,19 @@ const TemplateCreation = (props) => {
       },
       body: JSON.stringify(userInput),
     }).then(() => {
-      props.setAddTemplate(userInput)
-      setUserInput({
-        title: "",
-        blanks: [],
-        value: [],
-      });
+      fetch("http://localhost:5000/templates")
+        .then((res) => res.json())
+        .then((data) => {
+          props.setAddTemplate(data);
+          setUserInput({
+            title: "",
+            blanks: [],
+            value: [],
+          });
+        });
     });
-    
   };
-  
+
   return (
     <div>
       <h1>Welcome To Create Your Own Template Page</h1>

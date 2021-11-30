@@ -1,15 +1,10 @@
 import "./UsersTemplates.css";
 
 const UsersTemplates = (props) => {
-  const handleEdit = () => {
-    console.log("Edit Clicked");
-  };
-
-  
 
   const templatesArr =
-    props.templates &&
-    props.templates.map((template) => {
+    props.addTemplate &&
+    props.addTemplate.map((template, index) => {
       if (!template) {
         return <p>User's Templates</p>;
       } else {
@@ -24,10 +19,18 @@ const UsersTemplates = (props) => {
             <li>
               <span>Value:</span> {template.value}
             </li>
-            <button type="submit" onClick={handleEdit}>
+            <li>Index: {index}</li>
+            <button type="submit" onClick={() => {
+                props.handleEdit(template);
+              }}>
               Edit
             </button>
-            <button type="submit" onClick={props.handleDelete}>
+            <button
+              type="submit"
+              onClick={() => {
+                props.handleDelete(template);
+              }}
+            >
               Delete
             </button>
           </ul>
