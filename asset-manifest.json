@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/mad-libs-frontend/static/css/main.64fb4242.chunk.css",
+    "main.js": "/mad-libs-frontend/static/js/main.226258c3.chunk.js",
+    "main.js.map": "/mad-libs-frontend/static/js/main.226258c3.chunk.js.map",
+    "runtime-main.js": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js",
+    "runtime-main.js.map": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js.map",
+    "static/js/2.0afdd63f.chunk.js": "/mad-libs-frontend/static/js/2.0afdd63f.chunk.js",
+    "static/js/2.0afdd63f.chunk.js.map": "/mad-libs-frontend/static/js/2.0afdd63f.chunk.js.map",
+    "index.html": "/mad-libs-frontend/index.html",
+    "static/css/main.64fb4242.chunk.css.map": "/mad-libs-frontend/static/css/main.64fb4242.chunk.css.map",
+    "static/js/2.0afdd63f.chunk.js.LICENSE.txt": "/mad-libs-frontend/static/js/2.0afdd63f.chunk.js.LICENSE.txt",
+    "static/media/BacktotheFuture.65be46b9.jpeg": "/mad-libs-frontend/static/media/BacktotheFuture.65be46b9.jpeg",
+    "static/media/App.css": "/mad-libs-frontend/static/media/MongoMisfits.d52ddcf8.gif",
+    "static/media/Batman.53eb0e51.jpeg": "/mad-libs-frontend/static/media/Batman.53eb0e51.jpeg",
+    "static/media/DragonBall.bdf03bca.jpeg": "/mad-libs-frontend/static/media/DragonBall.bdf03bca.jpeg",
+    "static/media/FullmetalAlchemist.f043c569.jpeg": "/mad-libs-frontend/static/media/FullmetalAlchemist.f043c569.jpeg",
+    "static/media/Ghostbusters.02220d96.jpeg": "/mad-libs-frontend/static/media/Ghostbusters.02220d96.jpeg",
+    "static/media/Godzilla.e2a61fb1.jpeg": "/mad-libs-frontend/static/media/Godzilla.e2a61fb1.jpeg",
+    "static/media/JurassicPark.b887b2ce.jpeg": "/mad-libs-frontend/static/media/JurassicPark.b887b2ce.jpeg",
+    "static/media/Lordoftherings.8ccdd9d5.jpeg": "/mad-libs-frontend/static/media/Lordoftherings.8ccdd9d5.jpeg",
+    "static/media/Marvel.a6fd8490.jpeg": "/mad-libs-frontend/static/media/Marvel.a6fd8490.jpeg",
+    "static/media/Matrix.f23a9267.jpeg": "/mad-libs-frontend/static/media/Matrix.f23a9267.jpeg",
+    "static/media/RickandMorty.dba4613c.jpeg": "/mad-libs-frontend/static/media/RickandMorty.dba4613c.jpeg",
+    "static/media/SpiderMan.e0b751e8.jpeg": "/mad-libs-frontend/static/media/SpiderMan.e0b751e8.jpeg",
+    "static/media/StarWars.df03157c.jpeg": "/mad-libs-frontend/static/media/StarWars.df03157c.jpeg",
+    "static/media/Superman.d82846af.jpeg": "/mad-libs-frontend/static/media/Superman.d82846af.jpeg",
+    "static/media/Supernatural.c8c97acd.jpeg": "/mad-libs-frontend/static/media/Supernatural.c8c97acd.jpeg",
+    "static/media/XMen.b1ebd7e7.jpeg": "/mad-libs-frontend/static/media/XMen.b1ebd7e7.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.abf77be7.js",
+    "static/js/2.0afdd63f.chunk.js",
+    "static/css/main.64fb4242.chunk.css",
+    "static/js/main.226258c3.chunk.js"
+  ]
+}
