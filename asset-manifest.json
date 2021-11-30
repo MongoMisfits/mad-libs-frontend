@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mad-libs-frontend/static/css/main.64fb4242.chunk.css",
-    "main.js": "/mad-libs-frontend/static/js/main.6fcc9a4d.chunk.js",
-    "main.js.map": "/mad-libs-frontend/static/js/main.6fcc9a4d.chunk.js.map",
+    "main.css": "/mad-libs-frontend/static/css/main.ef01f5c9.chunk.css",
+    "main.js": "/mad-libs-frontend/static/js/main.2d3a14f9.chunk.js",
+    "main.js.map": "/mad-libs-frontend/static/js/main.2d3a14f9.chunk.js.map",
     "runtime-main.js": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js",
     "runtime-main.js.map": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js.map",
-    "static/js/2.838c7e2b.chunk.js": "/mad-libs-frontend/static/js/2.838c7e2b.chunk.js",
-    "static/js/2.838c7e2b.chunk.js.map": "/mad-libs-frontend/static/js/2.838c7e2b.chunk.js.map",
+    "static/js/2.595f3a07.chunk.js": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js",
+    "static/js/2.595f3a07.chunk.js.map": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js.map",
     "index.html": "/mad-libs-frontend/index.html",
-    "static/css/main.64fb4242.chunk.css.map": "/mad-libs-frontend/static/css/main.64fb4242.chunk.css.map",
-    "static/js/2.838c7e2b.chunk.js.LICENSE.txt": "/mad-libs-frontend/static/js/2.838c7e2b.chunk.js.LICENSE.txt",
-    "static/media/BacktotheFuture.65be46b9.jpeg": "/mad-libs-frontend/static/media/BacktotheFuture.65be46b9.jpeg",
+    "static/css/main.ef01f5c9.chunk.css.map": "/mad-libs-frontend/static/css/main.ef01f5c9.chunk.css.map",
+    "static/js/2.595f3a07.chunk.js.LICENSE.txt": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js.LICENSE.txt",
+    "static/media/Body.css": "/mad-libs-frontend/static/media/BacktotheFuture.65be46b9.jpeg",
     "static/media/App.css": "/mad-libs-frontend/static/media/MongoMisfits.d52ddcf8.gif",
     "static/media/Batman.53eb0e51.jpeg": "/mad-libs-frontend/static/media/Batman.53eb0e51.jpeg",
     "static/media/DragonBall.bdf03bca.jpeg": "/mad-libs-frontend/static/media/DragonBall.bdf03bca.jpeg",
@@ -30,8 +30,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.abf77be7.js",
-    "static/js/2.838c7e2b.chunk.js",
-    "static/css/main.64fb4242.chunk.css",
-    "static/js/main.6fcc9a4d.chunk.js"
+    "static/js/2.595f3a07.chunk.js",
+    "static/css/main.ef01f5c9.chunk.css",
+    "static/js/main.2d3a14f9.chunk.js"
   ]
 }
