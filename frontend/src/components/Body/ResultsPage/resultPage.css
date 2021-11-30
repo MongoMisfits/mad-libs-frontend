@@ -4,11 +4,12 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
+    gap: 2em;
 }
 
 .resultsBody {
     text-align: left;
-    margin: 2em;
+    margin: 2em 0 0 0;
     padding: 1em;
     width: 40%;
     font-size: 26px;
@@ -26,4 +27,11 @@
 .resultsBtnArr a {
     padding: 0;
     margin: 0;
+}
+
+.resultsMain form input {
+    width: 40%;
+    border: 1px solid gray;
+    padding: 1em;
+    font-size: 20px;
 }

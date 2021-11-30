@@ -2,7 +2,6 @@ import "./App.css";
 import dummyData from "./dummyData";
 import GameBody from "./components/Body/GameBody";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 import { Route, Routes } from "react-router-dom";
 import ResultsBody from "./components/Body/ResultsBody";
 import Instructions from "./components/Body/InstructionPage/Instructions";
@@ -76,7 +75,6 @@ export default function App() {
           }
         />
       </Routes>
-      <Footer />
     </div>
   );
 }
