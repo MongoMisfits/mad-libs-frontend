@@ -1,60 +1,96 @@
-.users-templates ul{
-    border: 1px solid black;
-    list-style: none;
-}
-
-.users-templates li{
-    font-weight: 700;
-    font-size: 18px;
-}
-.users-templates span{
-    color: red;
-    font-weight: 600;
-    font-size: 20px;
-}
-
-#tempform {
+.users-templates{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    flex-wrap: wrap;
-    width: 50vw;
-    margin: 0 auto;
+}
+.users-templates ul {
+  border: 3px solid black;
+  list-style: none;
+  width: 80%;
+}
+
+.users-templates li {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.users-templates span {
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#tempform,
+#updatetempform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 50vw;
+  margin: 0 auto;
+}
+#updatetempform {
+  width: 30vw;
 }
 
 #tempform > * {
-    border: 1px solid rgb(206, 206, 206);
-    border-radius: 15px;
-    padding: 1em;
-    font-size: 20px;
-    text-align: center;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 15px;
+  padding: 1em;
+  font-size: 20px;
+  text-align: center;
 }
 
 #tempform input {
-    width: 100%;
+  width: 100%;
 }
 
 #tempform textarea {
-    text-align: left;
-    width: 40%;
-    aspect-ratio: 1;
+  text-align: left;
+  width: 40%;
+  aspect-ratio: 1;
 }
 
 #tempform button {
-    width: 100%;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-    #tempform {
-        width: 75%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
+  #tempform {
+    width: 75%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
-    #tempform textarea, #tempform input, #tempform button {
-        aspect-ratio: 0;
-        width: 100%;
-        font-size: 16px;
-    }
+  #tempform textarea,
+  #tempform input,
+  #tempform button {
+    aspect-ratio: 0;
+    width: 100%;
+    font-size: 16px;
+  }
 }
+
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  top: 0;
+  left: 5%;
+  z-index: 1;
+}
+
+.ed-button{
+    margin: 15px 5px;
+}
+
