@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import './instruction.css'
 
 export default function Instructions() {
   return (
-    <div>
-      <h2>Instruction Page</h2>
+    <div className='instructionsMain'>
+      <h1>Instructions</h1>
       <ol>
-        <li>Select a theme</li>
-        <li>Fill in the word given the typ</li>
-        <li>View your madlib</li>
-        <li>Submit your own stories</li>
+        <li>Fill in the word given the type.</li>
+        <li>Submit your words and read your story.</li>
+        <li>Save your story or make your own through a template.</li>
       </ol>
         <Link to='/game-page' ><button>Next</button></Link>
     </div>

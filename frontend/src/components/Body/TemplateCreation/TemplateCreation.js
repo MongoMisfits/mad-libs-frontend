@@ -41,7 +41,7 @@ const TemplateCreation = (props) => {
 
   return (
     <div>
-      <h1>Welcome To Create Your Own Template Page</h1>
+      <h1>Create Your Own Template</h1>
       <form id="tempform" onSubmit={handleSubmit}>
         <input
           type="text"

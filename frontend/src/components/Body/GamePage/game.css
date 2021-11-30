@@ -1,0 +1,164 @@
+
+.gameInputMain input {
+    border: none;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInputMain input::placeholder {
+    color: white;
+}
+
+.body-page{
+    color: rgb(101, 161, 141);
+}
+
+.gameBodyMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    gap: 1em;
+    position: relative;
+}
+
+.iconDiv1, .iconDiv2 {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hiddenIconDiv {
+    display: none;
+}
+
+.arrowIcon {
+    font-size: 80px;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.arrowIcon:hover {
+    transform: scale(1.1);
+}
+
+.arrowIconInvisible {
+    opacity: 0;
+    cursor: none;
+}
+
+.gameInputMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameInput {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    position: fixed;
+    height: 40vh;
+    width: 30%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 20px;
+    pointer-events: none;
+    transform: translateY(200px);
+    z-index: -1;
+    background: linear-gradient(45deg, rgb(119, 161, 200) 0%, rgb(36, 36, 36) 100%);
+}
+
+.activePage {
+    opacity: 1;
+    pointer-events: visible;
+    transform: translateY(0);
+    z-index: 1;
+    transition: 0.3s ease;
+    background-position: center;
+}
+
+.activePage:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(1px 1px 15px rgb(146, 146, 146));
+    background-position: 200% center;
+}
+
+.gameInputMain {
+    width: 33%;
+    right: 0;
+    overflow: hidden;
+}
+
+.gameIndexIndicator {
+    width: 100%;
+    font-size: 30px;
+}
+
+.gameIndexIndicator h1 {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.underlinedWords {
+    text-decoration: underline;
+}
+
+.gameSubmit {
+    font-size: 20px;
+    width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .gameBodyMain {
+        padding: 5em 0 0 0;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+
+    .gameInput {
+       width: 85%;
+    }
+
+    .gameInputMain {
+        width: 80%;
+    }
+
+    .iconDiv1 {
+        display: none;
+    }
+
+    .hiddenIconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hiddenIconDiv, .iconDiv2 {
+        width: 40%;
+    }
+    
+    .gameInputMain input {
+        font-size: 20px;
+    }
+
+    .gameSubmit {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .gameIndexIndicator h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,14 @@
+.instructionsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    .instructionsMain {
+        font-size: 20px;
+    }
+}

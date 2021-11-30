@@ -1,0 +1,145 @@
+.resultsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    gap: 2em;
+}
+
+.resultsBody {
+    text-align: left;
+    margin: 2em 0 0 0;
+    padding: 1em;
+    width: 40%;
+    font-size: 26px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: white;
+    transition: 0.3s ease;
+}
+
+.resultsBody:hover, .otherUsers:hover {
+    transform: scale(1.03);
+    filter: drop-shadow(0px 2px 3px rgb(204, 204, 204));
+
+}
+
+.resultsBtnArr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.resultsBtnArr a {
+    padding: 0;
+    margin: 0;
+}
+
+.resultsMain form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 50%;
+}
+
+.resultsMain form input {
+    width: 40%;
+    border: 1px solid gray;
+    padding: 1em;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+.resultsDivider {
+    background-color: rgb(73, 85, 98);
+    width: 100vw;
+    height: 10vh;
+    color: white;
+}
+
+.otherUsersArrMain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 85%;
+    gap: 1em;
+    margin: 0 0 10em 0;
+}
+
+.otherUsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    aspect-ratio: 1;
+    padding: 1em;
+    border: 1px solid rgb(233, 233, 233);
+    background-color: white;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    color: black;
+    text-align: left;
+}
+
+.otherUsers p {
+    font-size: 20px;
+}
+
+.errorMessage {
+    color: red;
+    animation: errorMsg 1s infinite ease-in-out;
+}
+
+@keyframes errorMsg {
+    100%, 0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .resultsBody {
+        width: 75%;
+        font-size: 16px;
+    }
+
+    .resultsMain button {
+        font-size: 16px;
+    }
+
+    .resultsMain form {
+        flex-direction: column;
+        width: 75%;
+    }
+
+    .resultsMain form button {
+        width: 100%;
+    }
+
+    .resultsMain form input {
+        font-size: 16px;
+        width: 100%
+    }
+
+    .otherUsers {
+        width: 75%;
+        align-items: flex-start;
+    }
+
+    .otherUsers h1, h2 {
+        font-size: 30px;
+        margin: 0;
+        border-bottom: 1px solid rgb(185, 185, 185);;
+    }
+
+    .otherUsers p {
+        font-size: 16px;
+    }
+}
