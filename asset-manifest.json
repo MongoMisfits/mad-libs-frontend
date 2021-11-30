@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mad-libs-frontend/static/css/main.ef01f5c9.chunk.css",
-    "main.js": "/mad-libs-frontend/static/js/main.ebc0bcb1.chunk.js",
-    "main.js.map": "/mad-libs-frontend/static/js/main.ebc0bcb1.chunk.js.map",
+    "main.css": "/mad-libs-frontend/static/css/main.50395e1f.chunk.css",
+    "main.js": "/mad-libs-frontend/static/js/main.1c762e7b.chunk.js",
+    "main.js.map": "/mad-libs-frontend/static/js/main.1c762e7b.chunk.js.map",
     "runtime-main.js": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js",
     "runtime-main.js.map": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js.map",
     "static/js/2.595f3a07.chunk.js": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js",
     "static/js/2.595f3a07.chunk.js.map": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js.map",
     "index.html": "/mad-libs-frontend/index.html",
-    "static/css/main.ef01f5c9.chunk.css.map": "/mad-libs-frontend/static/css/main.ef01f5c9.chunk.css.map",
+    "static/css/main.50395e1f.chunk.css.map": "/mad-libs-frontend/static/css/main.50395e1f.chunk.css.map",
     "static/js/2.595f3a07.chunk.js.LICENSE.txt": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js.LICENSE.txt",
-    "static/media/Body.css": "/mad-libs-frontend/static/media/BacktotheFuture.65be46b9.jpeg",
+    "static/media/BacktotheFuture.65be46b9.jpeg": "/mad-libs-frontend/static/media/BacktotheFuture.65be46b9.jpeg",
     "static/media/App.css": "/mad-libs-frontend/static/media/MongoMisfits.d52ddcf8.gif",
     "static/media/Batman.53eb0e51.jpeg": "/mad-libs-frontend/static/media/Batman.53eb0e51.jpeg",
     "static/media/DragonBall.bdf03bca.jpeg": "/mad-libs-frontend/static/media/DragonBall.bdf03bca.jpeg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.abf77be7.js",
     "static/js/2.595f3a07.chunk.js",
-    "static/css/main.ef01f5c9.chunk.css",
-    "static/js/main.ebc0bcb1.chunk.js"
+    "static/css/main.50395e1f.chunk.css",
+    "static/js/main.1c762e7b.chunk.js"
   ]
 }
