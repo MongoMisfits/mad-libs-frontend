@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/mad-libs-frontend/static/css/main.ef01f5c9.chunk.css",
-    "main.js": "/mad-libs-frontend/static/js/main.2d3a14f9.chunk.js",
-    "main.js.map": "/mad-libs-frontend/static/js/main.2d3a14f9.chunk.js.map",
+    "main.js": "/mad-libs-frontend/static/js/main.7b91d15c.chunk.js",
+    "main.js.map": "/mad-libs-frontend/static/js/main.7b91d15c.chunk.js.map",
     "runtime-main.js": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js",
     "runtime-main.js.map": "/mad-libs-frontend/static/js/runtime-main.abf77be7.js.map",
     "static/js/2.595f3a07.chunk.js": "/mad-libs-frontend/static/js/2.595f3a07.chunk.js",
@@ -32,6 +32,6 @@
     "static/js/runtime-main.abf77be7.js",
     "static/js/2.595f3a07.chunk.js",
     "static/css/main.ef01f5c9.chunk.css",
-    "static/js/main.2d3a14f9.chunk.js"
+    "static/js/main.7b91d15c.chunk.js"
   ]
 }
