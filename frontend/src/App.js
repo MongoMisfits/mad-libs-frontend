@@ -17,9 +17,9 @@ export default function App() {
   const [addTemplate, setAddTemplate] = useState();
   
   const handleDelete = (template) => {
-    fetch(`http://localhost:5000/templates/${template._id}`, { method: 'DELETE'})
+    fetch(`https://mongo-misfits.herokuapp.com/templates/${template._id}`, { method: 'DELETE'})
     .then(()=>{
-      fetch("http://localhost:5000/templates")
+      fetch("https://mongo-misfits.herokuapp.com/templates")
         .then((res) => res.json())
         .then((data)=>{
           setAddTemplate(data)
