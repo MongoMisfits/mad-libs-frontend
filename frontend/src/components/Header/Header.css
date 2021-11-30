@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
-
 .hamburger {
     display: none;
 }
@@ -7,11 +5,11 @@
 .headerLinks{
     display: flex;
     justify-content: center;
+    font-family: 'Unica One', cursive;
 }
 
 .headerLinks h2{
     padding: 0 15px;
-    font-family: 'IBM Plex Serif', serif;
 }
 
 .headerLinks h2:hover {
