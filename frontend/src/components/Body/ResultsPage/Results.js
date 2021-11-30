@@ -16,8 +16,8 @@ function Results(props) {
     setUserStory([{user: usernameValue, template: [props.gameBodyResults]}])
     setUsernameValue('')
     if (usernameValue.length > 3) {
+      setErrorMessage(<h1>Your Story has been saved!</h1>)
       saveData()
-      setErrorMessage('')
     } else {
       setErrorMessage(<h1 className='errorMessage'>Your username is too short. Please try again.</h1>)
     }

@@ -24,14 +24,14 @@ const UsersTemplates = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch(`http://localhost:5000/templates/${temp._id}`, {
+    fetch(`https://mongo-misfits.herokuapp.com/templates/${temp._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(userInput),
     }).then(() => {
-      fetch("http://localhost:5000/templates")
+      fetch("https://mongo-misfits.herokuapp.com/templates")
         .then((res) => res.json())
         .then((data) => {
           props.setAddTemplate(data);
