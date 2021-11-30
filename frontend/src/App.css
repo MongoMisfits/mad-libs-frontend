@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 html {
   background-color: rgb(255, 252, 247);
@@ -6,8 +6,8 @@ html {
 }
 
 * {
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 300;
+    font-weight: 300;
+    font-family: 'Questrial', sans-serif;
 }
 
 .App {
