@@ -1,26 +1,48 @@
-.header{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(89, 94, 112);
-    border: 1px solid white;
-    backdrop-filter: blur 15px;
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+.hamburger {
+    display: none;
 }
 
-.header h2{
+.headerLinks{
+    display: flex;
+    justify-content: center;
+}
+
+.headerLinks h2{
     padding: 0 15px;
-    color: rgb(255, 255, 255);
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.headerLinks h2:hover {
+    color: white;
 }
 
 a {
     text-decoration: none;
-    color: black;
     margin: 1em;
     text-align: center;
     border-radius: 5px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
+    color: black
 }
   
 a:hover {
     transform: scale(1.02);
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(53, 53, 53);
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .headerLinks h2{
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+    }
 }

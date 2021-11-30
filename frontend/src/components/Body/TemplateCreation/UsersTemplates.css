@@ -12,3 +12,35 @@
     font-weight: 600;
     font-size: 20px;
 }
+
+#tempform {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 0 auto;
+}
+
+#tempform > * {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 15px;
+    padding: 1em;
+    font-size: 20px;
+    text-align: center;
+}
+
+#tempform input {
+    width: 100%;
+}
+
+#tempform textarea {
+    text-align: left;
+    width: 40%;
+    aspect-ratio: 1;
+}
+
+#tempform button {
+    width: 100%;
+}

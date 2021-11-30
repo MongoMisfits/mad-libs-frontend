@@ -58,7 +58,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    max-width: 85%;
     gap: 1em;
     margin: 0 0 10em 0;
 }
