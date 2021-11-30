@@ -8,23 +8,16 @@ import Instructions from "./components/Body/InstructionPage/Instructions";
 import ThankYou from "./components/Body/ThankYouPage/ThankYou";
 import TemplateCreation from "./components/Body/TemplateCreation/TemplateCreation";
 import UsersTemplates from "./components/Body/TemplateCreation/UsersTemplates";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function App() {
   const [gameBodyResults, setGameBodyResults] = useState([]);
 
   const data = dummyData;
   const [addTemplate, setAddTemplate] = useState();
-  const [templates, setTemplates] = useState([]);
   
-
-  if (!templates.includes(addTemplate)) {
-    setTemplates([...templates, addTemplate]);
-  }
-
-  const handleDelete = (index) => {
-    console.log("Delete clicked");
-    fetch(`http://localhost:5000/templates/${index._id}`, { method: 'DELETE'})
+  const handleDelete = (template) => {
+    fetch(`http://localhost:5000/templates/${template._id}`, { method: 'DELETE'})
     .then(()=>{
       fetch("http://localhost:5000/templates")
         .then((res) => res.json())
@@ -34,9 +27,9 @@ export default function App() {
     })
   };
 
-  const handleEdit = () => {
-    console.log("Edit Clicked");
-    
+ 
+  const handleEdit = (event) => {
+    event.target.parentElement.querySelector('.dropdown-content').style.display = 'block'
   };
 
   return (
@@ -71,6 +64,7 @@ export default function App() {
           element={
             <UsersTemplates
               addTemplate={addTemplate}
+              setAddTemplate={setAddTemplate}
               handleDelete={handleDelete}
               handleEdit={handleEdit}
             />
