@@ -127,6 +127,9 @@ function Results(props) {
         <Link to='/game-page' > <button>Play Again</button></Link>
         <Link to='/thank-you-page' > <button>Done</button></Link>
       </div>
+      <div className='resultsDivider'>
+        <h1>See other stories</h1>
+      </div>
       <div className='otherUsersArrMain'>
         {otherUsersArr}
       </div>

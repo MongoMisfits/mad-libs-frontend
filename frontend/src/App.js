@@ -2,7 +2,7 @@ import "./App.css";
 import dummyData from "./dummyData";
 import GameBody from "./components/Body/GameBody";
 import Header from "./components/Header/Header";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Link } from "react-router-dom";
 import ResultsBody from "./components/Body/ResultsBody";
 import Instructions from "./components/Body/InstructionPage/Instructions";
 import ThankYou from "./components/Body/ThankYouPage/ThankYou";
@@ -41,7 +41,9 @@ export default function App() {
 
   return (
     <div className="App">
-      <div className="banner"></div>
+      <Link to='/'>
+        <div className="banner"></div>
+      </Link>
       <Header />
       <Routes>
         <Route path="/" exact element={<Instructions />} />
