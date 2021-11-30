@@ -7,7 +7,7 @@ function ResultsBody(props) {
     return (
         <div>
             <h1>Hello from Results Page</h1>
-            <Theme />
+            {/* <Theme /> */}
             <Results gameBodyResults={props.gameBodyResults}/>
             <div>
                 <Link to='/game-page' > <button>Play Again</button></Link>
