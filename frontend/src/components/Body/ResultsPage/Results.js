@@ -93,10 +93,6 @@ function Results(props) {
     usersData && createUserSentences()
   }, [usersData])
 
-  console.log(usersData)
-  console.log(usersDataSentence)
-
-
   const otherUsersArr = usersData.map((user, index) => {
     return(
       <div className='otherUsers'>
@@ -115,7 +111,7 @@ function Results(props) {
   return (
     <div className="resultsMain">
       <div className="resultsBody">
-        {props.gameBodyResults && <h1>{props.gameBodyResults.title}</h1>}
+        {props.gameBodyResults && <h1 className='title'>{props.gameBodyResults.title}</h1>}
         {fullSentence}
       </div>
       <form onSubmit={handleSubmit}>

@@ -1,0 +1,14 @@
+
+.example-template p{
+    font-weight: 500;
+}
+
+.example-template span{
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h3{
+    font-weight: 700;
+}

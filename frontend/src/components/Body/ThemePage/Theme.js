@@ -16,9 +16,8 @@ import Superman from "../../../themes/Superman.jpeg";
 import Supernatural from "../../../themes/Supernatural.jpeg";
 import XMen from "../../../themes/XMen.jpeg";
 
-function Theme(props) {
-    const [data, setData] = useState([]);
-    console.log("data", data)
+function Theme() {
+  const [data, setData] = useState([]);
 
   const themeImages = [
     BacktotheFuture,
@@ -49,22 +48,10 @@ function Theme(props) {
     fetchData();
   }, []);
 
-  // Back to the Future
-
-  const backToTheFuture = (title) => {
-
-  if 
-    (title === 'Back to the Future' || title.includes(BacktotheFuture)){
-        this.setState({
-            backgroundStyle: {
-                backgroundImage: themeImages[1]
-            }
-        })
-  };
-
-  return (
-  <div>Themes Section</div>)
-}
+  console.log('data',data)
+    return (
+    <div>Themes Section</div>
+    )
 }
 
 export default Theme;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import './TemplateCreation.css'
 const TemplateCreation = (props) => {
   const [userInput, setUserInput] = useState({
     title: "",
@@ -42,6 +42,15 @@ const TemplateCreation = (props) => {
   return (
     <div>
       <h1>Create Your Own Template</h1>
+      <div className="example-template">
+        <h3>Example Template</h3>
+        <p><span>Title:</span> How To Cross a Piranha-Infested River</p>
+        <p><span>Blanks:</span> forein country, adverb, adjective, animal, verb ending in 'ing'</p>
+        <p><span>Value:</span> If you are traveling in , and find yourself having to cross a piranha-filled river, here's how to do it, 
+         Piranhas are more ,  during the day, so cross the river at night. Avoid areas with netted ,  traps--piranhas may be 
+        
+        </p>
+      </div>
       <form id="tempform" onSubmit={handleSubmit}>
         <input
           type="text"
