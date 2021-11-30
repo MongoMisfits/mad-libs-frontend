@@ -74,13 +74,16 @@ function Game(props) {
   return (
     <div>
       <div className='gameBodyMain'>
-        <div className='iconDiv'>
+        <div className='iconDiv1'>
             <RiArrowLeftCircleLine className={indexActive > 1 ? 'arrowIcon' : 'arrowIcon arrowIconInvisible'} direction={'left'} onClick={handleArrowClick}/>
         </div>
         <div className='gameInputMain'>
             {templateJsx}
         </div>
-        <div className='iconDiv'>
+        <div className='hiddenIconDiv'>
+            <RiArrowLeftCircleLine className={indexActive > 1 ? 'arrowIcon' : 'arrowIcon arrowIconInvisible'} direction={'left'} onClick={handleArrowClick}/>
+        </div>
+        <div className='iconDiv2'>
             {templateJsx && <RiArrowRightCircleLine className={indexActive < templateJsx.length ? 'arrowIcon' : 'arrowIcon arrowIconInvisible'} direction={'right'} onClick={handleArrowClick}/>}
         </div>
       </div>

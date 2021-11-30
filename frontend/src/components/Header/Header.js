@@ -14,7 +14,7 @@ function Header() {
   return (
     <div className="header">
       <GiHamburgerMenu className='hamburger'onClick={handleClick}/>
-      <div className='headerLinks'>
+      <div className={`headerLinks ${active ? 'active' : ''}`}>
         <Link to="/">
           <h2>Madlibs</h2>
         </Link>

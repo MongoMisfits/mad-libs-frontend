@@ -29,11 +29,15 @@
     position: relative;
 }
 
-.iconDiv {
+.iconDiv1, .iconDiv2 {
     width: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hiddenIconDiv {
+    display: none;
 }
 
 .arrowIcon {
@@ -114,4 +118,34 @@
 .gameSubmit {
     font-size: 20px;
     width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+    .gameBodyMain {
+        padding: 5em 0 0 0;
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+
+    .gameInput {
+       width: 85%;
+    }
+
+    .gameInputMain {
+        width: 80%;
+    }
+
+    .iconDiv1 {
+        display: none;
+    }
+
+    .hiddenIconDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hiddenIconDiv, .iconDiv2 {
+        width: 40%;
+    }
 }
