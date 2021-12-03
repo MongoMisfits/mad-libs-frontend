@@ -8,7 +8,7 @@ import Instructions from "./components/Body/InstructionPage/Instructions";
 import ThankYou from "./components/Body/ThankYouPage/ThankYou";
 import TemplateCreation from "./components/Body/TemplateCreation/TemplateCreation";
 import UsersTemplates from "./components/Body/TemplateCreation/UsersTemplates";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
   const [gameBodyResults, setGameBodyResults] = useState([]);
@@ -26,6 +26,10 @@ export default function App() {
         })
     })
   };
+
+  useEffect(() => {
+    document.title = "Misfit Madlibs"
+  }, [])
 
  
   const handleEdit = (event) => {
